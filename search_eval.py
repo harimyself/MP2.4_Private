@@ -12,7 +12,7 @@ def load_ranker(cfg_file):
     configuration file used to load the index.
     """
 
-    return metapy.index.OkapiBM25(k1=1.25, b=.79,k3=0)
+    return metapy.index.OkapiBM25(k1=1.25, b=.79,k3=1)
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
